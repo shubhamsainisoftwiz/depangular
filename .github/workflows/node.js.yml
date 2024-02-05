@@ -27,7 +27,7 @@ jobs:
         run: |
           npm install
           npm run gh-build
-          cp dist/angular-crash/index.html ./index.html
+          cp dist/angular-crash/index.html ../index.html
 
   deploy:
     runs-on: ubuntu-latest
