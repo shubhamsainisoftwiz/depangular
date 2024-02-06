@@ -97,11 +97,10 @@ jobs:
           name: production-files
           path: ./dist/angular-demo
 
-     - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.GITHUB_TOKEN }}
-          external_repository: shubhamsoftwiz/depangular
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          external_repository: shubhamsoftwiz/depangular # replace with your repository (e.g., yourusername/your-repo)
           publish_dir: ./dist/angular-demo
-
 
