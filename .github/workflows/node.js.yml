@@ -100,14 +100,12 @@ jobs:
           name: production-files
           path: ./dist/angular-demo
 
-       - name: Deploy
-          if: success()
-          uses: peaceiris/actions-gh-pages@v3
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./dist/angular-demo
-            enable_jekyll: true
-
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/angular-demo
+          enable_jekyll: true
 
 
 # /////////////
