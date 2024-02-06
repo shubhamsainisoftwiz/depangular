@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { GitDemoComponent } from './git-demo/git-demo.component';
 
 const routes: Routes = [{
-  path:"demo",
+  path:"/demo",
   component:GitDemoComponent
 }];
 
