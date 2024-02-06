@@ -103,5 +103,5 @@ jobs:
           deploy_key: ${{ secrets.GITHUB_TOKEN }}
           external_repository: shubhamsoftwiz/depangular
           publish_dir: ./dist/angular-demo
-          publish_branch: main  # Specify your GitHub Pages source branch
+
 
